@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="./assets/logo.png" alt="Logo Alura">
+        <h1 class="cabecalho__h1">Decodificador de Texto</h1>
+    </header>
+    <main>
+        <section class="section__texto">
+            <h1>Texto</h1>
+            <p>Utilizar somente letras minúsculas e sem acento</p>
+            <textarea id="inputTexto" placeholder="Digite um texto que você deseja criptografar ou descriptografar."></textarea>
+            <div>
+                <button onclick="criptografar()">Criptografar</button>
+                <button onclick="descriptografar()">Descriptografar</button>
+            </div>        
+        </section>
+        <section class="section__imagem">
+            <img src="./assets/imagem.png" alt="Foto menino com uma lupa">
+        </section>
+        <section class="section__resultado">
+            <h1 class="section__resultado__h1">Resultado</h1>
+            <textarea id="outputTexto" readonly placeholder="Nenhuma mensagem encontrada"></textarea>
+            <button id="copy">Copiar Resultado</button>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Aderson Alves Martins Junior</p>
+        <p>24/08/2024</p>
+    </footer>
+    <script src="botoes.js"></script>
+    
+</body>
+
+</html>
+
